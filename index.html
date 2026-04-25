@@ -116,6 +116,73 @@ h1,h2,h3,h4,h5 {
 .accordion-section.is-open .accordion-content { opacity:1; }
 .accordion-section .sec-head { margin-bottom:0; }
 .accordion-section .accordion-content { margin-top:52px; }
+.lp-feature-layout {
+  max-width:1380px;
+  margin:0 auto;
+  padding:0 32px 0 64px;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 420px;
+  gap:36px;
+  align-items:start;
+}
+.lp-feature-main {
+  min-width:0;
+}
+.lp-feature-main .section {
+  max-width:none;
+  margin:0;
+  padding:8px 20px 8px 0;
+}
+.lp-feature-main .full-sep-thin {
+  margin:0 20px 0 0;
+}
+.lp-preview-rail {
+  position:sticky;
+  top:32px;
+  align-self:start;
+  padding-top:8px;
+}
+.lp-preview-shell {
+  border:1px solid var(--gold-dim);
+  background:var(--black-3);
+  padding:18px;
+}
+.lp-preview-label {
+  display:block;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+.lp-preview-frame {
+  aspect-ratio:9 / 16;
+  width:100%;
+  max-width:360px;
+  margin-left:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
+  background:#0d0d0d;
+  border:1px solid var(--black-4);
+  scrollbar-width:thin;
+  scrollbar-color:var(--gold-dim) var(--black-3);
+}
+.lp-preview-frame::-webkit-scrollbar {
+  width:8px;
+}
+.lp-preview-frame::-webkit-scrollbar-track {
+  background:var(--black-3);
+}
+.lp-preview-frame::-webkit-scrollbar-thumb {
+  background:var(--gold-dim);
+}
+.lp-preview-frame img {
+  width:100%;
+  height:auto;
+  display:block;
+}
 .gmn-layout {
   display:grid;
   grid-template-columns:minmax(0, 1fr) minmax(320px, 0.6fr);
@@ -382,123 +449,133 @@ h1,h2,h3,h4,h5 {
 </div>
 
 <!-- Solução -->
-<div class="section">
-  <div class="sec-head">
-    <div class="sep-accent sep-accent-gold"></div>
-    <h2 class="sec-title">Criação da <em class="gold">Landing Page</em></h2>
-  </div>
-  <div class="lp-flow">
-    <div class="lp-block" style="border-left-color:var(--gold);">
-      <h4 style="color:var(--gold);">Criação do Site</h4>
-      <p>Página criada e 60% pronta.
-      <p>Falta: <br>
-        ● Revisão de conteúdo, adições e melhorias de material.</p>
-      <p>● Criar a versão Mobile e Tablet do site</p>
-      <p>● Instalação de ferramentas de rastreio Google tag manager + Google Analytics + Google Search Console para monitoraramento</p>
-      
-    </div>
-    <div class="lp-block" style="border-left-color:var(--gold);">
-      <h4 style="color:var(--gold);">Benefícios do Site</h4>
-      <p>Trabalha por você 24h por dia sem custo de veiculação marcando presença em todas as ferramentas de busca. <br>Maior taxa de vendas por público com intenção direta de compra.<br><a style="color: #fff;" ><strong>— uma vez criado -> Coloca dinheiro no caixa da empresa por tempo ilimitado .</strong></a></p>
-    </div>
-    <div class="lp-block" style="border-left-color:var(--gold);">
-      <h4 style="color:var(--gold);">Mensuração e Aprendizado</h4>
-      <p>Cada clique e visita, faz com que o ranqueamento seja atualizado e melhorado, quanto mais você aparece e converte visitas em cliques para agendamento, + você aparece para buscas futuras.</p>
-    </div>
-  </div>
-</div>
-<div class="full-sep-thin"></div>
-
-<!-- 11. ENTREGÁVEIS LP -->
-<div class="section">
-  <div class="sec-head">
-    <div class="sep-accent sep-accent-gold"></div>
-    <h2 class="sec-title">Entregáveis — <em class="gold">Landing Page</em></h2>
-  </div>
-  <div class="grid-2" style="gap:5px;">
-    <div class="card card-accent-gold">
-      <h4>Página Híbrida</h4>
-      <p>Landing Page de conversão + apresentação institucional com a história da empresa/pessoa, adaptada à identidade visual da Dra. Daiane.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Design Personalizado</h4>
-      <p>Identidade visual da marca: cores, logo e linguagem aplicadas em todos os elementos da página.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Copywriting das Seções</h4>
-      <p>Texto estratégico e orientado à conversão em cada bloco da página — desde o Titulo até o CTA final.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Portfólio Integrado</h4>
-      <p>Galeria de fotos para mostrar a qualidade do trabalho e gerar confiança antes do primeiro contato.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>CTA Direto para WhatsApp</h4>
-      <p>Botão de contato posicionado estrategicamente em todas as seções — caminho mais curto entre visita e orçamento.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Responsivo para Mobile, Tablet e telas maiores</h4>
-      <p>100% adaptado para celular — onde a maioria dos clientes faz a primeira busca e toma a decisão de contato.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>SEO On-page</h4>
-      <p>Configuração técnica para aparecer nas buscas do Google. Metadados, estrutura de headings e velocidade otimizados.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Ferramentas de Rastreio</h4>
-      <p>Google Tag Manager + Analytics + Search Console instalados — dados reais desde o primeiro dia no ar.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Testes de Performance</h4>
-      <p>Velocidade, carregamento e experiência de navegação validados antes da entrega final.</p>
-    </div>
-    <div class="card card-accent-gold">
-      <h4>Prazo de Entrega</h4>
-      <p>Construção completa em até 10 dias após coleta de informações: cores, logo, fotos e depoimentos.(em andamento)</p>
-    </div>
-  </div>
-</div>
-<div class="full-sep-thin"></div>
-
-
-
-<!-- 12. COMO ACONTECE NA PRÁTICA — SITE -->
-<div class="section">
-  <div class="sec-head">
-    <div class="sep-accent sep-accent-gold"></div>
-    <h2 class="sec-title">Como Acontece <em class="gold">na Prática</em></h2>
-  </div>
-  <div class="plan-grid">
-    <div class="plan-left" style="border:1px solid var(--gold-dim);">
-      <h3 style="color:var(--gold);">Simples<br>e Direto</h3>
-      <p style="font-size:14px;color:#888;line-height:1.65;">Modelamos o que já funciona no mercado para Estéticae saúde e adaptamos a linguagem e identidade da Dra. Daiane.</p>
-    </div>
-    <div class="plan-steps">
-      <div class="plan-step" style="border-color:var(--black-4);">
-        <div class="step-num" style="color:var(--gold);">1</div>
-        <div class="step-content">
-          <h4>Coleta de Referências e Informações</h4>
-          <p>Referências de sites para modelação, coleta de informações relevantes para cada seção — cores, fontes, logo, depoimentos mais relevantes e portfólio de projetos.</p>
-        </div>
+<div class="lp-feature-layout">
+  <div class="lp-feature-main">
+    <div class="section">
+      <div class="sec-head">
+        <div class="sep-accent sep-accent-gold"></div>
+        <h2 class="sec-title">Criação da <em class="gold">Landing Page</em></h2>
       </div>
-      <div class="plan-step" style="border-color:var(--black-4);">
-        <div class="step-num" style="color:var(--gold);">2</div>
-        <div class="step-content">
-          <h4>Construção · 10 dias</h4>
-          <p>Coleta de todas as informações realizada — construção completa de todo o projeto. Da estrutura ao copy, do design ao desenvolvimento.</p>
+      <div class="lp-flow">
+        <div class="lp-block" style="border-left-color:var(--gold);">
+          <h4 style="color:var(--gold);">Criação do Site</h4>
+          <p>Página criada e 60% pronta.
+          <p>Falta: <br>
+            ● Revisão de conteúdo, adições e melhorias de material.</p>
+          <p>● Criar a versão Mobile e Tablet do site</p>
+          <p>● Instalação de ferramentas de rastreio Google tag manager + Google Analytics + Google Search Console para monitoraramento</p>
+          
         </div>
-      </div>
-      <div class="plan-step" style="border-color:var(--black-4);">
-        <div class="step-num" style="color:var(--gold);">3</div>
-        <div class="step-content">
-          <h4>Aprovação, SEO e Rastreio · 2 dias</h4>
-          <p>Tudo aprovado, site funcional, seções validadas, testes de SEO e performance. Instalação de todas as ferramentas de rastreio e entrega.</p>
+        <div class="lp-block" style="border-left-color:var(--gold);">
+          <h4 style="color:var(--gold);">Benefícios do Site</h4>
+          <p>Trabalha por você 24h por dia sem custo de veiculação marcando presença em todas as ferramentas de busca. <br>Maior taxa de vendas por público com intenção direta de compra.<br><a style="color: #fff;" ><strong>— uma vez criado -> Coloca dinheiro no caixa da empresa por tempo ilimitado .</strong></a></p>
+        </div>
+        <div class="lp-block" style="border-left-color:var(--gold);">
+          <h4 style="color:var(--gold);">Mensuração e Aprendizado</h4>
+          <p>Cada clique e visita, faz com que o ranqueamento seja atualizado e melhorado, quanto mais você aparece e converte visitas em cliques para agendamento, + você aparece para buscas futuras.</p>
         </div>
       </div>
     </div>
+    <div class="full-sep-thin"></div>
+
+    <!-- 11. ENTREGÁVEIS LP -->
+    <div class="section">
+      <div class="sec-head">
+        <div class="sep-accent sep-accent-gold"></div>
+        <h2 class="sec-title">Entregáveis — <em class="gold">Landing Page</em></h2>
+      </div>
+      <div class="grid-2" style="gap:5px;">
+        <div class="card card-accent-gold">
+          <h4>Página Híbrida</h4>
+          <p>Landing Page de conversão + apresentação institucional com a história da empresa/pessoa, adaptada à identidade visual da Dra. Daiane.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Design Personalizado</h4>
+          <p>Identidade visual da marca: cores, logo e linguagem aplicadas em todos os elementos da página.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Copywriting das Seções</h4>
+          <p>Texto estratégico e orientado à conversão em cada bloco da página — desde o Titulo até o CTA final.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Portfólio Integrado</h4>
+          <p>Galeria de fotos para mostrar a qualidade do trabalho e gerar confiança antes do primeiro contato.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>CTA Direto para WhatsApp</h4>
+          <p>Botão de contato posicionado estrategicamente em todas as seções — caminho mais curto entre visita e orçamento.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Responsivo para Mobile, Tablet e telas maiores</h4>
+          <p>100% adaptado para celular — onde a maioria dos clientes faz a primeira busca e toma a decisão de contato.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>SEO On-page</h4>
+          <p>Configuração técnica para aparecer nas buscas do Google. Metadados, estrutura de headings e velocidade otimizados.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Ferramentas de Rastreio</h4>
+          <p>Google Tag Manager + Analytics + Search Console instalados — dados reais desde o primeiro dia no ar.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Testes de Performance</h4>
+          <p>Velocidade, carregamento e experiência de navegação validados antes da entrega final.</p>
+        </div>
+        <div class="card card-accent-gold">
+          <h4>Prazo de Entrega</h4>
+          <p>Construção completa em até 10 dias após coleta de informações: cores, logo, fotos e depoimentos.(em andamento)</p>
+        </div>
+      </div>
+    </div>
+    <div class="full-sep-thin"></div>
+
+    <!-- 12. COMO ACONTECE NA PRÁTICA — SITE -->
+    <div class="section">
+      <div class="sec-head">
+        <div class="sep-accent sep-accent-gold"></div>
+        <h2 class="sec-title">Como Acontece <em class="gold">na Prática</em></h2>
+      </div>
+      <div class="plan-grid">
+        <div class="plan-left" style="border:1px solid var(--gold-dim);">
+          <h3 style="color:var(--gold);">Simples<br>e Direto</h3>
+          <p style="font-size:14px;color:#888;line-height:1.65;">Modelamos o que já funciona no mercado para Estéticae saúde e adaptamos a linguagem e identidade da Dra. Daiane.</p>
+        </div>
+        <div class="plan-steps">
+          <div class="plan-step" style="border-color:var(--black-4);">
+            <div class="step-num" style="color:var(--gold);">1</div>
+            <div class="step-content">
+              <h4>Coleta de Referências e Informações</h4>
+              <p>Referências de sites para modelação, coleta de informações relevantes para cada seção — cores, fontes, logo, depoimentos mais relevantes e portfólio de projetos.</p>
+            </div>
+          </div>
+          <div class="plan-step" style="border-color:var(--black-4);">
+            <div class="step-num" style="color:var(--gold);">2</div>
+            <div class="step-content">
+              <h4>Construção · 10 dias</h4>
+              <p>Coleta de todas as informações realizada — construção completa de todo o projeto. Da estrutura ao copy, do design ao desenvolvimento.</p>
+            </div>
+          </div>
+          <div class="plan-step" style="border-color:var(--black-4);">
+            <div class="step-num" style="color:var(--gold);">3</div>
+            <div class="step-content">
+              <h4>Aprovação, SEO e Rastreio · 2 dias</h4>
+              <p>Tudo aprovado, site funcional, seções validadas, testes de SEO e performance. Instalação de todas as ferramentas de rastreio e entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="full-sep-thin"></div>
   </div>
+  <aside class="lp-preview-rail">
+    <div class="lp-preview-shell">
+      <span class="lp-preview-label">Preview da Landing Page</span>
+      <div class="lp-preview-frame">
+        <img src="LPDRAdaiane.png" alt="Preview da landing page da Dra Daiane">
+      </div>
+    </div>
+  </aside>
 </div>
-<div class="full-sep-thin"></div>
 
 
 
